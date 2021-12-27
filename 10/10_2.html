@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // code 2 อัน จะแสดง alert ออกมาเหมือนกันหมดหรือไม่
+
+        // let i = 0;
+        // while (i++ < 5)
+        // alert(i);
+            // alert 1-5
+        
+        let i = 0;
+        while (++i < 5)
+        alert(i);
+            // alert 1-4
+
+        // code 2 อัน แสดง alert ออกมาไม่เหมือนกัน 
+        //เพราะ ...++ จะประมวลผลที่ตัวมันเองก่อน แล้วค่อยประมวล <5 
+        //แต่ ++... จะประมวลจากขวาไปซ้าย จึงประมวลเครื่องหมาย <5 ก่อน 
+        //i++ จึง alert ถึง 5 และ ++i จึง alert ถึงแค่ 4
+    </script>
+</body>
+</html>

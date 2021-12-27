@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // เกมทายตัวเลข
+        let ans = +prompt('ใส่เลขของคุณ..');
+
+        while(ans !== undefined) {
+            let n = +prompt("ทายเลขของเพื่อนคุณ");
+            if(n<ans) alert('น้อยไป');
+            if(n>ans) alert('มากไป');
+            if(n === ans) break;
+        }
+        alert('Congrat!')
+    </script>
+</body>
+</html>

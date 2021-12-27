@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user = prompt('คุณคือใคร');
+
+        if (user === 'Admin') {
+                let pw = prompt('รหัสผ่านคืออะไร');
+                if (pw === 'codecamp#5') {
+                    alert('ยินดีต้อนรับ');
+                } else if ( pw === null || pw === "") {
+                    alert('ยกเลิก');
+                } else if (pw != 'codecamp#5') {
+                    alert('รหัสผ่านผิด');
+                }
+        } else if ( user === null || user === "") {
+            alert('ยกเลิก');
+        } else if (user != 'Admin') {
+            alert('ฉันไม่รู้จักคุณ');
+        } 
+    </script>
+</body>
+</html>
